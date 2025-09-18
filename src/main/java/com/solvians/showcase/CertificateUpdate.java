@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.math.BigDecimal;
+
 @AllArgsConstructor
 @ToString
 @NoArgsConstructor
@@ -13,9 +15,9 @@ public class CertificateUpdate {
 
     private long timestamp;
     private String isin;
-    private double bidPrice;
+    private BigDecimal bidPrice;
     private int bidSize;
-    private double askPrice;
+    private BigDecimal askPrice;
     private int askSize;
 
 }
